@@ -1,0 +1,286 @@
+*{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    }
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    }
+body{
+    width: 100vw;
+    min-height: 100vh;
+    }
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+    }
+.humburger{
+    cursor: pointer;
+    }
+.closeNav{
+    display: none;
+    }
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 50px;
+    }
+header nav ul li
+    {
+    margin: 20px 0px;
+    }
+header nav ul li img
+    {
+    cursor: pointer;
+    margin-top: 2px;
+    }
+header nav ul li a
+    {
+    text-decoration: none;
+    color: var(--Almost-Black);
+    transition: .5s;
+    }
+header nav ul li a:hover
+    {
+    color:darkgoldenrod
+    }
+    .contentMobile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
+    .contentMobile 
+    {
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    .contentMobile .textContent h1
+    {
+    color: var(--Almost-Black);
+    font-size: 38px;
+    margin-bottom: 5px;
+    }
+    .contentMobile .textContent p
+    {
+    color:var(--Medium-Gray);
+    margin: 20px 30px;
+    }
+    .contentMobile button , .contentDesktop button
+    {
+    width: 110px;
+    padding: 9px 11px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 40px;
+    }
+    .logos
+    {
+    display: flex;
+    justify-content: flex-start;
+    }
+    .logos img
+    {
+    margin: 0px 18px;
+    width: 150px;
+    }
+    .side
+    {
+    position: absolute;
+    width:230px;
+    height: 100vh;
+    background-color: var(--Almost-White);
+    right: -230px;
+    top: 0;
+    z-index: 100;
+    transition: .5s;
+    }
+    .side p
+    {
+    margin: 6px 0px;
+    color: var(--Medium-Gray);
+    cursor: pointer;
+    }
+    button{
+    margin-right: 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    }
+    button:hover{
+    background: var(--Medium-Gray);
+    }
+
+    #login , #register{
+    background-color: transparent;
+    border: none;
+    padding: 12px 23px;
+    color: var(--Medium-Gray); 
+    cursor: pointer;
+    }
+    #register{
+    border: 2px solid var(--Medium-Gray);
+    border-radius: 20px;
+    cursor: pointer;
+    }
+    .toggleList , .toggleList2{
+    display: none;
+    }
+    .toggleRotate{
+    transform: rotate(180deg);
+    }
+    .closeNav{
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: block;
+    cursor: pointer;
+    }
+    .desktopImg{
+    display: none;
+    }
+    .desktopNav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:initial;
+    }ul{
+    display: flex;
+    justify-content: space-between;  
+    }
+    .mobileNav ul{
+    display: flex;
+    justify-content: space-between;
+    }
+    .desktopnav{
+    display: none;
+    }
+    .desktopnav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 120px;
+    }
+    .desktopnav ul li{
+    padding: 0px 20px;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+    transition: .5s;
+    }
+    .desktopnav ul li:hover{
+    color: var(--Almost-Black);
+    }
+    .logo{
+    display: flex;
+    flex-direction: row;
+    }
+    .contentDesktop{
+    display: none;
+    }
+
+
+
+ @media screen and (min-width:1400px){
+    .mobileNav{
+    display: none;
+    }
+    .contentMobile{
+    display: none;
+    }
+    .mobileNav{
+    display: none;
+    }
+    .desktopnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    }
+    .desktopnav .btn button{
+    padding: 7px 11px;
+    background-color: transparent;
+    }
+    .contentDesktop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    }
+    .contentDesktop img{
+    width: 500px;
+    }
+    .contentDesktop .textcontent{
+    width: 25%;
+    margin-top: 70px;
+    }
+    .contentDesktop .textcontent h1{
+    font-size: 68px;
+    width: 382px;
+    line-height: 70px;
+    font-family: system-ui;
+    }
+    .contentDesktop .textcontent p{
+    color:var(--Medium-Gray);
+    margin: 20px 0px;
+    width: 502px;
+    font-size: 25px;
+    font-family: system-ui;
+    margin-bottom: 30px;
+    }
+    .contentDesktop .logos{
+    margin-top: 30px;
+    }
+    .contentDesktop .imgContent{
+    margin-top: -120px;
+    }
+    .contentDesktop button{
+    width: 150px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border: 2px solid var(--Almost-Black);
+    font-weight: 900;
+    margin: 40px 0px;
+}
+    .contentDesktop button:hover{
+        background-color: var(--Almost-White);
+        color: var(--Almost-Black);
+        
+    }
+    .desktopnav ul .features , .desktopnav .company{
+    position: absolute;
+    top:78px;
+    margin-left: -13px;
+    background-color:white;
+    box-shadow: 0px 0px 2px white , 0px 0px 10px black;
+    border-radius: 10px;
+    
+    }
+    .desktopnav ul .features , .desktopnav .company p{
+    padding: 10px 12px;
+    cursor: pointer;
+    }
+    .desktopnav .company{
+        margin-left: 135px;
+    }
+    .desktopnav ul .features p {
+        padding: 10px 0px;  
+    }
+    .desktopnav .toggleFeatures{
+        display: none;
+    }
+    }
+    
+    
+    

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./styel.css">
+</head>
+<body>
+<header>
+  <nav class="desktopnav">
+    <div class="logo">
+      <img src="images/logo.svg" style="position: absolute; top: 43px;">
+      <ul>
+        <li>Features <img src="images/icon-arrow-down.svg"></li>
+        <div class="features toggleFeatures">
+          <p class="toggleList"> <img src="images/icon-todo.svg"> TodoList</p>
+          <p class="toggleList"> <img src="images/icon-calendar.svg"> Calendar</p>
+          <p class="toggleList"> <img src="images/icon-reminders.svg"> Reminders</p>
+          <p class="toggleList"> <img src="images/icon-planning.svg"> planning</p>
+        </div>
+        <li class="companyy">Company <img src="images/icon-arrow-down.svg"></li>
+        <div class="company">
+          <p class="toggleList2">History</p>
+          <p class="toggleList2">Our Team</p>
+          <p class="toggleList2">Blog</p>
+        </div>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    </div>
+      <div class="btn">
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+      </div>
+  </nav>
+<nav class="mobileNav">
+  <div class="logo"><img src="images/logo.svg"></div>
+   
+  <!-- Responsive Nav -->
+
+    <div class="responsive-nav">
+      <img src="images/icon-menu.svg" class="humburger">
+      <div class="side">
+        <ul>
+          <img src="images/icon-close-menu.svg" class="closeNav">
+          <li><a href="#">Features</a> <img src="images/icon-arrow-down.svg" ></li>
+<div class="features">
+  <p class="toggleList"><img src="images/icon-todo.svg"> TodoList<img src=""></p>
+  <p class="toggleList"><img src="images/icon-calendar.svg"> Calendar</p>
+  <p class="toggleList"><img src="images/icon-reminders.svg"> Reminders</p>
+  <p class="toggleList"><img src="images/icon-planning.svg"> planning</p>
+</div>
+ <li><a href="#">Company</a> <img src="images/icon-arrow-down.svg" class="arrow2"></li>
+<div class="company">
+  <p class="toggleList2">History</p>
+  <p class="toggleList2">Our Team</p>
+  <p class="toggleList2">Blog</p>
+</div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+          <button id="login">Login</button>
+          <button id="register">Register</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Content Desktop -->
+  <div class="contentDesktop">
+<div class="textcontent">
+  <h1>Make remote Work</h1>
+  <p>
+    Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar.
+  </p>
+  <button>Learn More</button>
+  <div class="logos">
+    <img src="images/client-databiz.svg">  
+    <img src="images/client-audiophile.svg">
+    <img src="images/client-maker.svg">
+    <img src="images/client-meet.svg">
+  </div>
+</div>
+<div class="imgContent">
+  <img src="images/image-hero-desktop.png">
+</div>
+  </div>
+  <!-- Content Mobile -->
+  <div class="contentMobile">
+    <div class="imgContent">
+      <img src="images/image-hero-desktop.png" class="desktopImg">
+      <img src="images/image-hero-mobile.png" class="mobileImg">
+    </div>
+    <div class="textContent">
+      <h1>
+        Make remote work
+      </h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button>Learn More</button>
+<div class="logos">
+  <img src="images/client-databiz.svg">  
+  <img src="images/client-audiophile.svg">
+  <img src="images/client-maker.svg">
+  <img src="images/client-meet.svg">
+</div>
+    </div>
+  </div>
+</header>
+<script src="main.js"></script>
+</body>
+</html>
